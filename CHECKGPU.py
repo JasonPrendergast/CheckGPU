@@ -4,7 +4,6 @@ def get_available_gpus():
     return [x.name for x in local_device_protos if x.device_type == 'GPU']
 
 foo = get_available_gpus()
-print ('boo')
 print(foo)
 
 #import tensorflow as tf
